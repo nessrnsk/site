@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>script>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: blanchedalmond;
+       } 
+       p{
+        font-size: 50px; 
+    color: black; 
+    background-color: pink;
+    text-align: center;
+    text-shadow: 0 0 10px lightgrey;
+}
+       
+</style>
+</head>
+<body>
+    <script>
+let userName=prompt("What is your name?", "nastya");
+document.writeln("<p>"+"Hello dear "+userName+"!"+"</p>");
+let a=+prompt("Введіть значення сторони а", 3);
+let b=+prompt("Введіть значення сторони в", 4);
+let S=a*b;
+document.writeln("<p> Площа прямокутника дорівнює "+S+" см </p>");
+let P=(a+b)*2;
+document.writeln("<p> Периметр прямокутника дорівнює "+P+" см </p>");
+let aTr=+prompt("Введіть значення сторони а", 3);
+let bTr=+prompt("Введіть значення сторони b", 4);
+let cTr=+prompt("Введіть значення сторони с", 4);
+/*let STr;
+document.writeln("<p> Площа прямокутника дорівнює "+S+" см </p>");*/
+let PTr=aTr+bTr+cTr;
+document.writeln("<p> Периметр прямокутника дорівнює "+P+" см </p>");
+
+
+    </script>
+</body>
+</html>

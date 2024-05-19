@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/spam.css">
+    <title>Spam</title>
+
+</head>
+<body>
+    <script>
+        function spamWords() {
+  const userText = prompt("Введіть текст:","spam");
+  
+  if (userText === null) {
+    return false; 
+  }
+
+  const lowerCaseText = userText.toLowerCase();
+  return lowerCaseText.includes("spam") || lowerCaseText.includes("spam");
+}
+
+
+const containsSpam = spamWords();
+
+if (containsSpam) {
+  document.write("<div>Це спам</div>");
+} else {
+  document.write("<div>Немає спаму</div>");
+}
+
+
+    </script>
+</body>
+</html>

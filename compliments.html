@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         background-color: rgb(75, 66, 66);
+         font-size: 50px; 
+        } 
+       
+         
+    
+</style>
+</head>
+<body>
+    <div id="form">
+        <form name="first" action="javascript:compliments()">
+            <p>Введдіть кількість компліментів</p>
+            <input class="selection" name="block" type="text" value="" style="font-size: 23px; text-align: center;">
+            <button class="ok" role="button">Підтвердити</button>
+        </form>
+    </div>	
+    <span id="out"></span>
+        <script type="text/javascript">
+            function compliments() {
+            let input = +document.first.block.value;
+            let sol = document.getElementById("out");
+            let compliments=["smart","clever","kind","hardworking","funny","lifefull","cute","strong","genius","logical","gorgeous"];
+            let animals=['pig', 'rabbit', 'horse','wolf', 'dolphin', 'fox', 'dog', 'giraffe', 'cat', 'snake'];
+            let colors=['#ff0000', '#0066ff', '#c44dff', '#ffa31a', '#00cc00', '#ff99ff', '#ffcc33', '#ff1a75', '#99ff99'];
+            let string= ''
+                for(let i=1;i<=input;i++) {
+                    let rand=Math.floor(Math.random()*compliments.length);
+                    let rand2=Math.floor(Math.random()*animals.length);
+                    let rand3=Math.floor(Math.random()*colors.length);
+                    let rand4=Math.floor(Math.random()*colors.length);
+                    let rand5=Math.floor(Math.random()*colors.length);
+                string +=`<p style="color:${colors[rand5]}">${i}) You are so <span style="color:${colors[rand3]}">${compliments[rand]}</span> as a <span style="color:${colors[rand4]}">${animals[rand2]}</span></p>`;
+                }
+                sol.innerHTML = string;
+                }
+            compliments()
+            </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-image: url(https://www.creativefabrica.com/wp-content/uploads/2023/04/02/Nature-Background-Graphics-66003200-1.jpg);
+           background-attachment: fixed;
+           background-position: center;
+           background-size: cover;
+       }
+   </style>
+</head>
+<body>
+<script>
+    let marks = +prompt('введіть вашу оцінку', '')
+    switch(marks) {
+        case 12:
+        case 11:
+        case 10:
+            alert('відмінно!');
+            break;
+        case 9:
+        case 8:
+        case 7:
+            alert('не погано');
+            break;
+        case 6:
+        case 5:
+        case 4:
+            alert('задовільно');
+            break;
+        case 3:
+        case 2:
+        case 1:
+             alert('не задовільно');
+             break;
+             default:
+            alert('такої оцінки немає!')
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://png.pngtree.com/background/20230412/original/pngtree-nature-forest-sun-ecology-picture-image_2394782.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let answer;
+        let inputNumber = prompt ("напишіть число від 0 до 50");
+        let questNumber = prompt ("вгадайте число від 0 до 50");
+        inputNumber=parseInt(inputNumber);
+        questNumber=parseInt(questNumber);
+        if (inputNumber>50) {
+            alert("це число невірне")
+        }
+        if (questNumber > inputNumber) answer="це число більше";
+        if (questNumber < inputNumber) answer="це число менше";
+        if (questNumber == inputNumber) answer="це правильна відповідь!";
+        alert(answer)
+    </script>
+</body>
+</html>
